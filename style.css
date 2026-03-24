@@ -1,0 +1,41 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculadora{
+    border-radius: 5%;
+    background-color: rgb(145, 145, 145);
+    padding: 40px;
+    width: fit-content;
+    margin: auto;
+}
+
+#inserir{
+    background-color: aliceblue;
+    height: 67px;
+    width: 360px;
+    border-radius: 7px;
+    border-style: none;
+    font-size: 35px;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    appearance: none; 
+}
+
+button{
+    width: 79px;
+    height: 90px;
+    border-radius: 20%;
+    margin: 4px;
+    border-style: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#numeros{
+    margin-top: 20px;
+}
+
+
+
