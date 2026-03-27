@@ -1,80 +1,60 @@
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }
 
 .calculadora{
-    border-radius: 5%;
-    background-color: rgb(0, 0, 0);
-    padding: 40px;
-    width: fit-content;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 320px;
 }
 
-#operacoes{
-    width: 360px;
-    border-radius: 7px;
-    text-align: right;
-    font-size: 20px;
-    margin-bottom: 40px;
-    background-color: #ffffff;
-    height: 50px;
-    overflow-wrap: break-word;
+.display{
+  background-color: #222;
+  color: #ffff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  min-height: 50px;
+  text-align: right;
 }
 
-#operacao_1,
-#operacao_2{
-    background-color: #ffffff;
+.botoes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-#operacao_1{
-    color: #929292;
-    height: 20px;
+.botao{
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-#operacao_2{
-    height: 55px;
-    font-size: 48px;
-    font-weight: 700;
+.cinza-escuro{
+  background-color: #333;
+  color: #fff;
 }
 
-input[type=number]::-webkit-inner-spin-button{
-    appearance: none; 
+.laranja{
+  background-color: #f39c12;
+  color: #fff;
 }
 
-#botoes{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 7px;
+.cinza_claro{
+  background-color: #d3d3d3;
+  color: #000;
 }
 
-button{
-    height: 70px;
-    font-size: 19px;
-    border-radius: 20%;
-    cursor: pointer;
-    border: none;
-    background-color: rgb(202, 201, 201);;
+.zero{
+  grid-column: span 2;
+  border-radius: 50px;
 }
-
-button:hover{
-    background-color: rgb(223, 224, 226);
-}
-
-.numero{
-    background-color: rgb(255, 255, 255);
-}
-
-#botao_igual{
-    grid-column: span 2;
-    background-color: rgb(236, 74, 74);
-    border-radius: 15px;
-}
-
-#botao_igual:hover{
-    background-color: rgb(202, 61, 61);
-}
-
