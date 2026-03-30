@@ -5,6 +5,11 @@ body{
   background-color: black;
 }
 
+img{
+  width: 100%;
+  height: auto;
+}
+
 .calculadora{
   background-color: black;
   padding: 20px;
@@ -14,7 +19,7 @@ body{
   width: 320px;
 }
 
-.display{
+#display{
   background-color: #222;
   color: #ffff;
   font-size: 20px;
@@ -23,6 +28,7 @@ body{
   margin-bottom: 20px;
   min-height: 50px;
   text-align: right;
+  word-wrap: break-word; /* Permite que o texto quebre para a próxima linha se for muito longo*/
 }
 
 .botoes{

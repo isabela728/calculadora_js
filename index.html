@@ -9,33 +9,32 @@
 
   <div class="calculadora">
 
-    <div class="display"></div>
+    <div id="display"></div>
 
     <div class="botoes">
-      <button class="botao cinza-claro">AC</button>
-      <button class="botao cinza-claro">+/-</button>
-      <button class="botao cinza-claro">%</button>
-      <button class="botao laranja">/</button>
-      <button class="botao cinza-escuro">7</button>
-      <button class="botao cinza-escuro">8</button>
-      <button class="botao cinza-escuro">9</button>
-      <button class="botao laranja">X</button>
-      <button class="botao cinza-escuro">4</button>
-      <button class="botao cinza-escuro">5</button>
-      <button class="botao cinza-escuro">6</button>
-      <button class="botao laranja">-</button>
-      <button class="botao cinza-escuro">1</button>
-      <button class="botao cinza-escuro">2</button>
-      <button class="botao cinza-escuro">3</button>
-      <button class="botao laranja">+</button>
-      <button class="botao cinza-escuro zero">0</button>
-      <button class="botao cinza-escuro">,</button>
-      <button class="botao laranja">=</button>
-
-
+      <button class="botao cinza-claro" onclick="limparDisplay()">AC</button>
+      <button class="botao cinza-claro" onclick="removerNumero()"><img src="assets/delete.png" alt="deleteIcon"></button>
+      <button class="botao cinza-claro" onclick="adicionarOperador('%')">%</button>
+      <button class="botao laranja" onclick="adicionarOperador('/')">/</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero(7)">7</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero(8)">8</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero(9)">9</button>
+      <button class="botao laranja" onclick="adicionarOperador('*')">X</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero(4)">4</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero(5)">5</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero(6)">6</button>
+      <button class="botao laranja" onclick="adicionarOperador('-')">-</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero(1)">1</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero(2)">2</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero(3)">3</button>
+      <button class="botao laranja" onclick="adicionarOperador('+')">+</button>
+      <button class="botao cinza-escuro zero" onclick="adicionarNumero(0)">0</button>
+      <button class="botao cinza-escuro" onclick="adicionarNumero('.')">,</button>
+      <button class="botao laranja" onclick="calcular()">=</button>
     </div>
 
   </div>
   
+  <script src="script.js"></script>
 </body>
 </html>
